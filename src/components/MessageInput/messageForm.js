@@ -58,8 +58,8 @@ class MessageForm extends React.Component {
   }
 }
 
-MessageForm.proptype = {
-  sendMessage: PropTypes.func.isRequired
+MessageForm.propTypes = {
+  dispatch: PropTypes.func.isRequired
 };
 
 export default connect()(MessageForm);
