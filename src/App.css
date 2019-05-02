@@ -1,33 +1,325 @@
-.App {
+
+
+@media (min-width:0px) and (max-width:425px) {
+.container {
+    position:relative;
+    margin-top: 8%;
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+    height:100px;
+}
+}
+@media (min-width:426px) and (max-width:768px)  {
+.container {
+    position:relative;
+    margin-top:8%;
+   margin-left:auto;
+    margin-right:auto;
+    width:40%;
+    height:100px;
+}
+
+}
+
+@media (min-width:769px) and (max-width:1480px)  {
+.container {
+    position:relative;
+    margin-top: 8%;
+    margin-left:auto;
+    margin-right:auto;
+    width:25%;
+    height:100px;
+}
+}
+
+@media (min-width:1481px) {
+.container {
+    position:relative;
+    margin-top: 8%;
+    margin-left:auto;
+    margin-right:auto;
+    width:25%;
+    height:100px;
+}
+}
+
+
+body{   
+    background-color: #8DACC8;
+    background-image:  linear-gradient(#CFDBE7,#8DACC8);
+    background-repeat: no-repeat;
+    height: 100%;
+ 
+}
+
+.header {
+    background-color:	#6A95D9;
+    height: 50%;
+    /* align-items: baseline; */
+   
+}
+
+.header-title { 
+     float: left;
+     color: white;
+     position: absolute;
+     top:15px;
+     left:15px;
+}
+
+.header-close {
+    float : right;
+    position: absolute;
+    right:15px;
+    top:15px;
+}
+/* 
+.header-title > span{
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 16px;
+     font-weight: bolder;
+     letter-spacing: 0.1em;
+     font-variant-caps: all-petite-caps;
+} */
+
+.header-title > span {
+    
+     font-family: 'Nunito', sans-serif;
+     font-size: 16px;
+     font-weight: bolder;
+     font-variant-caps: all-petite-caps;
+
+
+     
+}
+.circle{
+     height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: 11%;
+    margin-right: 5px;
+
+}
+
+.msg-container {
+    height: 300px;
+    width:100%;
+    background-color:rgb(255, 255, 255);
+    overflow-y: auto;
+   
+}
+
+.msg-container::-webkit-scrollbar { 
+    display: none; 
+} 
+
+.messages{
+   margin: 15px;
+   
+}
+
+
+.message-list-sent{
+    min-width: 50%;
+    max-width: 75%;
+    /* margin-top: 2.5%; */
+    padding: 1.5%;
+    position: relative;
+    float:left;
+}
+.message-list-today{
+    min-width: 100%;
+    position: relative;
+    float:left;
+}
+.message-list-recieved{
+    min-width: 50%;
+    max-width: 75%;
+    margin-top: 2.5%;
+    padding: 1.5%;
+    float:right;
+}
+
+.message-content-sent{
+    background-color: #E6EDF5;
+    padding: 3%;
+    border-radius: 3px;
+    position: relative;
+    display: inline-block;
+}
+.message-content-recieved{
+    background-color: #F2F2F2;
+    padding: 3%;
+    border-radius: 3px;
+    position: relative;
+    float: right;
+}
+.blocked{
+    background-color: #F8C4C1;
+}
+
+.message-content-sent > span{
+    font-size: 12px;
+    font-family: 'Futura, sans-serif';
+    font-style: normal;
+    padding: 2.5px;
+    display: inline-block;
+    
+}
+.message-content-recieved > span{
+    font-size: 12px;
+    font-family: 'Futura, sans-serif';
+    font-style: normal;
+    padding: 2.5px;
+    display: inline-block;
+    
+}
+
+.tri-right.border.left-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: -8px;
+	right: auto;
+    top: -8px;
+	bottom: auto;
+	border: 8px solid;
+	border-color:#E6EDF5 transparent transparent transparent;
+}
+
+.tri-right.left-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: -8px;
+	right: auto;
+    top: 0px;
+	bottom: auto;
+	border: 8px solid;
+	border-color:#E6EDF5 transparent transparent transparent;
+}
+
+
+.tri-left.border.right-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    right: -8px;
+	left: auto;
+    top: -8px;
+	bottom: auto;
+	border: 8px solid;
+	border-color:#F2F2F2 transparent transparent transparent;
+}
+
+.tri-left.right-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    right: -8px;
+	left: auto;
+    top: 0px;
+	bottom: auto;
+	border: 8px solid;
+	border-color:#F2F2F2 transparent transparent transparent;
+}
+
+
+.message-date-received{
+     font-size: 12px;
+     color: gray;
+     text-align: end;
+     margin-bottom: 1%;
+     
+}
+.message-date-sent{
+     font-size: 12px;
+     color: gray;
+     text-align: start;
+     margin-bottom: 1%;
+     
+}
+.msg-input-block{
+    
+	width:100%;
+    height: 45px;
+   
+    background-color:rgb(255, 255, 255);
+    
+}
+.msg-block{
+    width:91%;
+    margin:0 auto;
+    padding-top: 10px;
+    height: 40%;
+    position: relative;
+    border-top: 1px solid lightgray;
+}
+
+.msg-input{
+    float:left;
+    min-width:75%;
+}
+
+.msg-input input{
+   width:100%;
+   height:15px;
+   border: none;
+   outline: none;
+  padding-top: 5px;
+  padding-bottom: 5px;   
+  font-size: 12px; 
+  background-color: white;
+}
+
+.msg-send-button{
+    float:right;
+   
+}
+.msg-send-button input[type=submit]{
+    font-size: 12px;
+    background-color: Transparent;
+    height:25px;
+    border: none;
+    outline: none;
+    color: #8b87f0;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
   text-align: center;
+  height: 1.5em;
+  opacity: .4;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .hr-text:before {
+    content: '';
+    background: #818078;
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    height: 1px;
   }
-  to {
-    transform: rotate(360deg);
+  .hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    font-size: 10px;
+    padding: 0 .5em;
+    line-height: 1.5em;
+    color: #818078;
+    background-color: #fcfcfa;
   }
-}
