@@ -1,11 +1,9 @@
-import { createStore } from 'redux'
-import messageReducer from '../reducers/message'
+import { createStore } from "redux";
+import messageReducer from "../reducers/message";
 
 const configureStore = () => {
-    const store = createStore(
-        messageReducer
-    )
-    return store
-}
+  const store = createStore(messageReducer);
+  return store;
+};
 
-export default configureStore
+export default configureStore;
