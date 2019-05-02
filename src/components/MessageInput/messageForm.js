@@ -39,7 +39,7 @@ class MessageForm extends React.Component {
   render() {
     const { message } = this.state;
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <div className="msg-input">
           <input
             type="text"
@@ -47,10 +47,11 @@ class MessageForm extends React.Component {
             placeholder="Enter Your Message"
             value={message}
             onChange={this.handleChange}
+            required
           />
         </div>
         <div className="msg-send-button">
-          <input type="submit" value="SEND" onClick={this.handleSubmit} />
+          <input type="submit" value="SEND" />
         </div>
       </form>
     );
